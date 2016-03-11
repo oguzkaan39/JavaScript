@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Merhaba</title>
+  <script type="text/javascript">
+    //Yeni liste yaratma
+    var mevcutdersler= new Array("XHTML","  JS");
+    var verilecekdersler=new Array("HTML5","C++");
+    //For döngüsü ile listeyi ekrana yazdırma
+    for(i=0; i<mevcutdersler.length; i++)
+    {
+      document.write(mevcutdersler[i]);
+    }
+
+    document.write("<hr/>");
+    //Join metodu listenin tamamını ekrana döker
+    document.write(mevcutdersler.join());
+    document.write("<hr/>");
+    //Concat metodu iki listeyi birleştirir.
+    document.write(mevcutdersler.concat(verilecekdersler).join());
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

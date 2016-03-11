@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Merhaba</title>
+  <script type="text/javascript">
+  //Array Oluşturma
+  var derslistesi = new Array("HTML", "Java", "C++", "Ruby");
+  document.write(derslistesi[2]);
+  //Farklı biçimde Array oluşturma
+  var ülkelistesi = new Array();
+    ülkelistesi[0]="Almanya";
+    ülkelistesi[1]="İngiltere";
+    ülkelistesi[2]="Fransa";
+    ülkelistesi[3]="Türkiye";
+    document.write("</br>");
+    document.write(ülkelistesi[0]);
+
+    /*var uzunluk=derslistesi.length;
+    document.write(uzunluk);*/
+
+    //tüm listeyi for döngüsü ile yazdırma
+    
+    for(i=0; i<derslistesi.length; i++)
+    {
+      document.write(derslistesi[i]);
+    }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

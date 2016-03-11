@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Merhaba</title>
+<script type="text/javascript">
+  function ders(isim, kod, hoca, tarih)
+  {
+    this.isim=isim;
+    this.kod=kod;
+    this.hoca=hoca;
+    this.tarih=tarih;
+    this.kacsenedir=kacsenedir;  
+  }
+  function kacsenedir()
+  {
+    var x=2012-this.tarih;
+    return x;
+  }
+</script>
+
+
+</head>
+<body>
+  <script type="text/javascript">
+  var ders1 = new ders("Java",101,"Oğuz",2010);
+  //document.write(ders1.isim);
+  var ders2 = new ders("HTML",202,"Alp",2009);
+  //ders1 için kacsenedir fonksiyonunu çağırıp ekrana yazdırma..
+  document.write(ders1.kacsenedir());
+  document.write("</br>");
+  //ders2 için kacsenedir fonksiyonunu çağırıp ekrana yazdırma..
+  document.write(ders2.kacsenedir());
+
+  </script>
+
+</body>
+</html>
